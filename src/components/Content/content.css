@@ -1,0 +1,22 @@
+/*
+ * ========================
+ * Content Component Styles
+ * ========================
+ */
+.background {
+    /*background-color:white;*/
+    border-radius:1px;
+    margin-top:10px;
+    margin-bottom:10px;
+    z-index:20;
+    padding:20px;
+}
+
+.content-title {
+    color: #ffffff;
+    padding-left:0;
+}
+
+.no-padd {
+    padding-left:0;
+}
