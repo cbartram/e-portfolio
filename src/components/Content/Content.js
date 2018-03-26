@@ -21,8 +21,8 @@ class Content extends Component {
             <div className={`col-md-${this.props.size} ${this.state.offsetString}`}>
                 <div className="background">
                     <div className="row">
-                        <div className="col-md-3 col-md-offset-5 no-padd">
-                            <h2 className="content-title">{this.props.title}</h2>
+                        <div className="col-md-7 col-md-offset-3 no-padd">
+                            <h2 className="content-title" style={this.props.titleStyle}>{this.props.title}</h2>
                         </div>
                     </div>
                     <div className="row">

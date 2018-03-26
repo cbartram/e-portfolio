@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
 import './css/App.css';
+import trees from './images/snowy_trees.jpg';
 
 //Custom Components
 import Content from './components/Content/Content';
@@ -61,14 +62,82 @@ class App extends Component {
                     </div>
                 </section>
                 <section className="row section-woods">
-                    <p align="center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus ante sed odio feugiat, vel dictum elit pharetra.
-                        Phasellus eu lorem sit amet ligula congue sodales. Nulla rhoncus in lectus vitae tempor. Aenean sed egestas mi. Duis urna est,
-                        finibus ut nisl tristique, convallis mollis purus. Ut ac augue luctus, placerat ex nec, consequat nulla. Nam vitae fermentum enim.
-                    </p>
+                    <div className="col-md-5 no-padd">
+                        <div className="image-trees" />
+                    </div>
+                    <div className="col-md-6 col-md-offset-1">
+                        <div className="background">
+                            <div className="row">
+                                <div className="col-md-7 col-md-offset-3 no-padd">
+                                    <h2 className="content-title" style={{color: '#332e56'}}>Contact Me</h2>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <p align="center" className="cls-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus ante sed odio feugiat, vel dictum elit pharetra.
+                                        Phasellus eu lorem sit amet ligula congue sodales. Nulla rhoncus in lectus vitae tempor. Aenean sed egestas mi. Duis urna est,
+                                        finibus ut nisl tristique, convallis mollis purus. Ut ac augue luctus, placerat ex nec, consequat nulla. Nam vitae fermentum enim.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="row">
+                    <div className="Quotes">
+                        <ul className="QuoteList">
+                            <li className="QuoteList__item QuoteList__item--active" data-slug="coveteur">
+                                <div className="QuoteList__test">
+                                    Erika is a stunning representation of the raw power a simple interaction can make on a
+                                    child's life
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </main>
+          <footer className="footer-distributed">
+              <div className="footer-left">
+                  <h3>Company<span>logo</span></h3>
+                  <p className="footer-links">
+                      <a href="#">Home</a>·
+                      <a href="#">Blog</a>·
+                      <a href="#">Pricing</a>·
+                      <a href="#">About</a>·
+                      <a href="#">Faq</a>·
+                      <a href="#">Contact</a>
+                  </p>
+                  <p className="footer-company-name">Company Name © 2015</p>
+              </div>
+              <div className="footer-center">
+                  <div>
+                      <i className="fa fa-map-marker" />
+                      <p><span>21 Revolution Street</span> Paris, France</p>
+                  </div>
+                  <div>
+                      <i className="fa fa-phone" />
+                      <p>+1 555 123456</p>
+                  </div>
+                  <div>
+                      <i className="fa fa-envelope" />
+                      <p><a href="mailto:support@company.com">support@company.com</a></p>
+                  </div>
+              </div>
+              <div className="footer-right">
+                  <p className="footer-company-about">
+                      <span>About the company</span>
+                      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                  </p>
+                  <div className="footer-icons">
+                      <a href="#"><i className="fa fa-facebook" /></a>
+                      <a href="#"><i className="fa fa-twitter" /></a>
+                      <a href="#"><i className="fa fa-linkedin" /></a>
+                      <a href="#"><i className="fa fa-github" /></a>
+                  </div>
+              </div>
+          </footer>
       </div>
     );
   }
