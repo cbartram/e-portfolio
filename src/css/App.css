@@ -11,6 +11,10 @@ body {
   color:#8E9AAF;
   background-color:rgb(250, 250, 254);
 }
+
+p {
+    z-index: 1000;
+}
 /*
  8E9AAF - darker gray
  CBC0D3 - greyish purple
@@ -82,7 +86,7 @@ body {
     bottom: 10px;
     content: "";
     height: 93px;
-    top:200px;
+    top:230px;
     z-index:10;
     position: absolute;
     right: 0;
@@ -167,7 +171,7 @@ li > a {
 }
 
 .btn-danger:hover {
-    transition: opacity .70s;
+    background-color:rgb(200, 113, 102)
 }
 
 .cta-divider {
@@ -265,11 +269,9 @@ footer {
     bottom: 0;
 }
 
-.footer-left {
-    width: 40%;
-}
 .footer-center {
-    width: 35%;
+    margin-left:20%;
+    width: 45%;
 }
 .footer-right {
     width: 20%;
@@ -278,4 +280,59 @@ footer {
 .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #332e56;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #706c87;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #332e56;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #332e56;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fa .fa-envelope {
+    font-size: 5px;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #706c87;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 20px;
 }

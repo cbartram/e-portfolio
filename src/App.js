@@ -62,10 +62,10 @@ class App extends Component {
                     </div>
                 </section>
                 <section className="row section-woods">
-                    <div className="col-md-5 no-padd">
+                    <div className="col-md-5 col-sm-6 hidden-xs no-padd">
                         <div className="image-trees" />
                     </div>
-                    <div className="col-md-6 col-md-offset-1">
+                    <div className="col-md-6 col-md-offset-1 col-sm-6 col-xs-12">
                         <div className="background">
                             <div className="row">
                                 <div className="col-md-7 col-md-offset-3 no-padd">
@@ -99,42 +99,30 @@ class App extends Component {
             </div>
         </main>
           <footer className="footer-distributed">
-              <div className="footer-left">
-                  <h3>Company<span>logo</span></h3>
-                  <p className="footer-links">
-                      <a href="#">Home</a>·
-                      <a href="#">Blog</a>·
-                      <a href="#">Pricing</a>·
-                      <a href="#">About</a>·
-                      <a href="#">Faq</a>·
-                      <a href="#">Contact</a>
-                  </p>
-                  <p className="footer-company-name">Company Name © 2015</p>
-              </div>
               <div className="footer-center">
                   <div>
                       <i className="fa fa-map-marker" />
-                      <p><span>21 Revolution Street</span> Paris, France</p>
+                      <p><span>8306 Lincoln Lane</span> McClean, Virginia 22102</p>
                   </div>
                   <div>
                       <i className="fa fa-phone" />
-                      <p>+1 555 123456</p>
+                      <p>(407)-247-0519</p>
                   </div>
                   <div>
-                      <i className="fa fa-envelope" />
-                      <p><a href="mailto:support@company.com">support@company.com</a></p>
+                      <i className="fa fa-envelope" style={{ fontSize: '20px'}} />
+                      <p><a href="mailto:pickarderika@gmail.com">pickarderika@gmail.com</a></p>
                   </div>
               </div>
               <div className="footer-right">
                   <p className="footer-company-about">
-                      <span>About the company</span>
-                      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                      <span>Erika Pickard</span>
+                      You can find me on Facebook, Twitter, and LinkedIn
+                      at the links below.
                   </p>
                   <div className="footer-icons">
-                      <a href="#"><i className="fa fa-facebook" /></a>
-                      <a href="#"><i className="fa fa-twitter" /></a>
-                      <a href="#"><i className="fa fa-linkedin" /></a>
-                      <a href="#"><i className="fa fa-github" /></a>
+                      <a href="mailto:pickarderika@gmail.com"><i className="fa fa-envelope" /></a>
+                      <a href="#"><i className="fa fa-phone" /></a>
+                      <a href="https://www.linkedin.com/in/erika-pickard-55b595149/"><i className="fa fa-linkedin" /></a>
                   </div>
               </div>
           </footer>
