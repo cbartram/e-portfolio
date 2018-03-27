@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import './PracticumContent.css';
+import './PortfolioContent.css';
 
-class PracticumContent extends Component {
+class PortfolioContent extends Component {
     render() {
         return (
             <div>
@@ -34,4 +34,4 @@ class PracticumContent extends Component {
     }
 }
 
-export default PracticumContent;
+export default PortfolioContent;
