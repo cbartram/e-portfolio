@@ -5,8 +5,8 @@ import './Resume.css'
 import {
     Step,
     Stepper,
-    StepButton,
     StepContent,
+    StepLabel
 } from 'material-ui/Stepper';
 import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
@@ -45,9 +45,10 @@ class Resume extends Component {
                     label="Next"
                     disableTouchRipple={true}
                     disableFocusRipple={true}
-                    primary={true}
                     onClick={this.handleNext}
-                    style={{marginRight: 12}}
+                    style={{margin:12}}
+                    backgroundColor={"#d9534f"}
+                    labelStyle={{color:'white'}}
                 />
                 {step > 0 && (
                     <FlatButton
@@ -67,6 +68,11 @@ class Resume extends Component {
         return (
             <div>
                 <Navigation/>
+                    <section className="row splash">
+                        <div className="col-md-2 col-md-offset-5">
+                            <h1 align="center">Resume</h1>
+                        </div>
+                    </section>
                     <section className="row resume">
                         <div className="col-md-10 col-md-offset-1">
                             <Stepper
@@ -75,9 +81,9 @@ class Resume extends Component {
                                 orientation="vertical"
                             >
                                 <Step>
-                                    <StepButton onClick={() => this.setState({stepIndex: 0})}>
-                                        Select campaign settings
-                                    </StepButton>
+                                    <StepLabel onClick={() => this.setState({stepIndex: 0})}>
+                                        Holliser - January 2012
+                                    </StepLabel>
                                     <StepContent>
                                         <p>
                                             For each ad campaign that you create, you can control how much
@@ -88,18 +94,18 @@ class Resume extends Component {
                                     </StepContent>
                                 </Step>
                                 <Step>
-                                    <StepButton onClick={() => this.setState({stepIndex: 1})}>
-                                        Create an ad group
-                                    </StepButton>
+                                    <StepLabel onClick={() => this.setState({stepIndex: 1})}>
+                                        Rainbow Pediatrics - November 2017
+                                    </StepLabel>
                                     <StepContent>
                                         <p>An ad group contains one or more ads which target a shared set of keywords.</p>
                                         {this.renderStepActions(1)}
                                     </StepContent>
                                 </Step>
                                 <Step>
-                                    <StepButton onClick={() => this.setState({stepIndex: 2})}>
-                                        Create an ad
-                                    </StepButton>
+                                    <StepLabel onClick={() => this.setState({stepIndex: 2})}>
+                                        Trasca & Co - March 2015
+                                    </StepLabel>
                                     <StepContent>
                                         <p>
                                             Try out different ad text to see what brings in the most customers,
