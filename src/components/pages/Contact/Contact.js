@@ -1,26 +1,22 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './practicum.css'
+import './Contact.css'
 
 //Custom Components
 import Navigation from '../../Navigation/Navigation';
 import Footer from '../../Footer/Footer';
-import PracticumContent from '../../Practicum-Content/PracticumContent';
 
-class Practicum extends Component {
+class Contact extends Component {
     render() {
         return (
             <div>
                 <Navigation/>
                 <main>
                     <section className="row">
-                        <div className="col-md-2 col-md-offset-5">
-                            <h1 align="center">Practicum</h1>
+                        <div className="col-md-2 col-md-offset-2">
+                            <h1 align="center">Contact</h1>
                         </div>
                     </section>
-                    <PracticumContent/>
-                    <PracticumContent/>
-                    <PracticumContent/>
                 </main>
                 <Footer/>
             </div>
@@ -28,4 +24,4 @@ class Practicum extends Component {
     }
 }
 
-export default Practicum;
+export default Contact;

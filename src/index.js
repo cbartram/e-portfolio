@@ -11,6 +11,7 @@ import About from './components/pages/About/About';
 import Resume from './components/pages/Resume/Resume.js';
 import Practicum from './components/pages/Practicum/Practicum';
 import Portfolio from './components/pages/Portfolio/Portfolio';
+import Contact from './components/pages/Contact/Contact';
 
 const muiTheme = getMuiTheme({
     stepper: {
@@ -27,6 +28,7 @@ ReactDOM.render(
                     <Route exact path="/resume" component={Resume} />
                     <Route exact path="/practicum" component={Practicum} />
                     <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/contact" component={Contact} />
                 </Switch>
             </BrowserRouter>
     </MuiThemeProvider>, document.getElementById('root'));
