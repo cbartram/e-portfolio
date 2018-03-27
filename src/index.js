@@ -1,18 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //Pages
 import App from './App';
 import About from './components/pages/About/About';
+import Resume from './components/pages/Resume/Resume.js';
 
 ReactDOM.render(
+    <MuiThemeProvider>
         <BrowserRouter>
-            <Switch>
-                <Route exact path="/" component={App} />
-                <Route exact path="/about" component={About} />
-            </Switch>
-        </BrowserRouter>, document.getElementById('root'));
+                <Switch>
+                    <Route exact path="/" component={App} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/resume" component={Resume} />
+                </Switch>
+            </BrowserRouter>
+    </MuiThemeProvider>, document.getElementById('root'));
 
 registerServiceWorker();

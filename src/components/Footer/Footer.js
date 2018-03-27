@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import './footer.css'
 
 class Footer extends Component {
-
     render() {
         return (
             <footer className="footer-distributed">
@@ -28,7 +27,7 @@ class Footer extends Component {
                     </p>
                     <div className="footer-icons">
                         <a href="mailto:pickarderika@gmail.com"><i className="fa fa-envelope" /></a>
-                        <a href="#"><i className="fa fa-phone" /></a>
+                        <a href="#phone"><i className="fa fa-phone" /></a>
                         <a href="https://www.linkedin.com/in/erika-pickard-55b595149/"><i className="fa fa-linkedin" /></a>
                     </div>
                 </div>

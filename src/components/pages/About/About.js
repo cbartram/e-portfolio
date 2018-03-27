@@ -8,10 +8,6 @@ import Footer from '../../Footer/Footer';
 import Content from '../../Content/Content';
 
 class About extends Component {
-    constructor() {
-        super()
-    }
-
     render() {
         return (
             <div>

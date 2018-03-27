@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import './Navigation.css'
 
 class Navigation extends Component {
-    constructor() {
-        super()
-    }
-
     render() {
         return (
             <header role="banner">
@@ -24,7 +20,7 @@ class Navigation extends Component {
                                 </a>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about">About Me</a></li>
-                                <li><a href="#resume">Resume</a></li>
+                                <li><a href="/resume">Resume</a></li>
                                 <li><a href="#practicum">Practicum</a></li>
                                 <li><a href="#portfolio">Portfolio</a></li>
                                 <li><a href="#contact">Contact Me</a></li>
