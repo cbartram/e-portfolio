@@ -4,6 +4,14 @@
  * ========================
  */
 #practicum {
-    height:200px;
+    height:150px;
     background-color:#dce0e8;
+}
+
+img {
+    margin:15px;
+}
+
+.practicum-text {
+    margin-top:20px;
 }
