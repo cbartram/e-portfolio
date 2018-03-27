@@ -1,0 +1,55 @@
+/**
+ * =============
+ * Navbar Styles
+ * =============
+ */
+#navbar-primary {
+    margin-bottom:0;
+}
+
+#navbar-primary .navbar-nav {
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+    height:80px;
+    padding-top:15px;
+}
+
+/**
+ * TODO This could be dangerous later on
+ */
+li > a {
+    color:rgb(50, 47, 83);
+}
+
+.navbar-brand > p {
+    font-family: 'Lobster', cursive;
+    font-size:30px;
+    color:#8E9AAF;
+}
+
+#navbar-primary .navbar-nav > li {
+    display: inline-block;
+    float: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(50, 47, 83);
+}
+
+#navbar-primary .navbar-nav > a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color:rgb(50, 47, 83);
+}
+
+#logo-navbar-middle {
+    border-radius:50%;
+    height:100px;
+    width:100px;
+}
+
+.navbar-nav li > a:hover {
+    border-bottom:2px solid rgb(50, 47, 83);
+    background-color: white;
+    color:rgb(50, 47, 83);
+}
