@@ -5,6 +5,8 @@ import './portfolio.css'
 //Custom Components
 import Navigation from '../../Navigation/Navigation';
 import Footer from '../../Footer/Footer';
+import PortfolioContent from '../../Portfolio-Content/PortfolioContent';
+
 
 class Portfolio extends Component {
     render() {
@@ -12,11 +14,14 @@ class Portfolio extends Component {
             <div>
                 <Navigation/>
                 <main>
-                    <section className="row">
-                        <div className="col-md-2 col-md-offset-2">
-                            <h1 align="center">Portfolio</h1>
+                    <section className="row" id="portfolio">
+                        <div className="col-md-2 col-md-offset-5">
+                            <h1 align="center" className="portfolio-header">Portfolio</h1>
                         </div>
                     </section>
+                    <PortfolioContent/>
+                    <PortfolioContent/>
+                    <PortfolioContent/>
                 </main>
                 <Footer/>
             </div>
