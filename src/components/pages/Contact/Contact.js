@@ -15,7 +15,8 @@ class Contact extends Component {
                 title: '',
                 email: '',
                 message: ''
-            }
+            },
+            successMessage: ''
         }
     }
 
@@ -27,7 +28,7 @@ class Contact extends Component {
     handleChange = (value, field) => {
         let {form} = this.state;
         form[field] = value;
-        this.setState({form})
+        this.setState({form, successMessage: ''})
     };
 
     /**
@@ -58,7 +59,16 @@ class Contact extends Component {
             },
             body: JSON.stringify(this.state.form), //Post the Form data stored in react state
         }).then(res => res.json()).then(body => {
-           console.log(body);
+           if(body.success) {
+               this.setState({
+                   form: {
+                       title: '',
+                       email: '',
+                       message: ''
+                   },
+                   successMessage: 'Your information has been sent successfully!'
+               })
+           }
         });
 
     };
@@ -74,6 +84,11 @@ class Contact extends Component {
                             <h1 align="center">Contact Me</h1>
                         </div>
                     </section>
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-3 margin-bottom">
+                            {this.state.successMessage.length > 0 && <div className="alert alert-success">{this.state.successMessage}</div>}
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col-md-6 col-md-offset-3 margin-bottom">
                             <input type="text" value={this.state.form.title} className="form-control" onChange={e => this.handleChange(e.target.value, 'title')} name="title" placeholder="Title" />
