@@ -3,34 +3,10 @@
  * Background Image Section
  * ========================
  */
-.image-splash {
-    background: url("../../../images/splash.jpg") no-repeat center;
-    background-size:cover;
-    height:270px;
+#contact {
+    height:100px;
 }
 
-.image-self {
-    margin-top:20px;
-    margin-bottom:20px;
-    background: url("../../../images/redwood-day.jpg") no-repeat center;
-    background-size:cover;
-    height:300px;
-}
-
-.image-self-2 {
-    margin-top:20px;
-    margin-bottom:20px;
-    background: url("../../../images/redwoods.jpg") no-repeat center;
-    background-size:cover;
-    height:300px;
-}
-
-/**
- * ========================
- * Section Text
- * ========================
- */
-.text {
-    background-color:white;
-
+.margin-bottom-large {
+    margin-bottom:70px;
 }
