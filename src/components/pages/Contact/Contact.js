@@ -35,6 +35,7 @@ class Contact extends Component {
      */
     handleSubmit = () => {
         let {form} = this.state;
+        let err = false;
 
         //TODO Validate Email
         for(let prop in form) {
@@ -42,11 +43,23 @@ class Contact extends Component {
                 if(form[prop].length <= 0) {
                     //Throw error message
                     console.error("One of the fields is empty");
+                    err = true;
                 }
             }
         }
 
         //Submit the form
+        //TODO CHANGE TO THE DEST URL
+        !err &&
+        fetch('http://localhost:3001/contact/submit/', {
+            method: 'POST',
+            headers: {
+                Accept: 'application/json', 'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(this.state.form), //Post the Form data stored in react state
+        }).then(res => res.json()).then(body => {
+           console.log(body);
+        });
 
     };
 
