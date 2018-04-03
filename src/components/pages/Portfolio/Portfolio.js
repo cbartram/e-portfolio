@@ -16,12 +16,12 @@ class Portfolio extends Component {
                 <main>
                     <section className="row" id="portfolio">
                         <div className="col-md-2 col-md-offset-5">
-                            <h1 align="center" className="portfolio-header">Portfolio</h1>
+                            <h1 align="center" className="portfolio-header">Experiences</h1>
                         </div>
                     </section>
-                    <PortfolioContent/>
-                    <PortfolioContent/>
-                    <PortfolioContent/>
+                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://s3.amazonaws.com/erika-portfolio/police.jpeg"/>
+                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://s3.amazonaws.com/erika-portfolio/police.jpeg"/>
+                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://s3.amazonaws.com/erika-portfolio/police.jpeg"/>
                 </main>
                 <Footer/>
             </div>

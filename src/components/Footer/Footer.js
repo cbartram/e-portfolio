@@ -8,7 +8,7 @@ class Footer extends Component {
                 <div className="footer-center">
                     <div>
                         <i className="fa fa-map-marker" />
-                        <p><span>8306 Lincoln Lane</span> McClean, Virginia 22102</p>
+                        <p><span>12337 Wynnfield Lakes Dr #821</span> Jacksonville, FL 32246</p>
                     </div>
                     <div>
                         <i className="fa fa-phone" />

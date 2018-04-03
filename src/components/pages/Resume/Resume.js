@@ -69,17 +69,22 @@ class Resume extends Component {
             <div>
                 <Navigation/>
                     <section className="row splash">
-                        <div className="col-md-2 col-md-offset-5">
+                        <div className="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-5">
                             <h1>Resume</h1>
                         </div>
                         <div className="row">
-                            <div className="col-md-2 col-md-offset-5">
-                                <a href="http://erika-pickard.surge.sh/static/media/Resume.pdf">
+                            <div className="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-5">
+                                <a href="https://s3.amazonaws.com/aeroscape-cache/Resume.pdf">
                                     <button type="button" className="btn btn-outline-primary">Download PDF</button>
                                 </a>
                             </div>
                         </div>
                     </section>
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset-1">
+                            <h2>Volunteer Experience</h2>
+                        </div>
+                    </div>
                     <section className="row resume">
                         <div className="col-md-10 col-md-offset-1">
                             <Stepper

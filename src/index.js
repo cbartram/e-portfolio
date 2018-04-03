@@ -20,9 +20,6 @@ const muiTheme = getMuiTheme({
     }
 });
 
-//
-
-
 ReactDOM.render(
     <MuiThemeProvider muiTheme={muiTheme}>
         <BrowserRouter>
@@ -31,7 +28,7 @@ ReactDOM.render(
                     <Route exact path="/about" component={About} />
                     <Route exact path="/resume" component={Resume} />
                     <Route exact path="/practicum" component={Practicum} />
-                    <Route exact path="/portfolio" component={Portfolio} />
+                    <Route exact path="/experiences" component={Portfolio} />
                     <Route exact path="/contact" component={Contact} />
                     <Route exact path="/admin/login" component={Login} />
                     {/* Admin Login Routes */}

@@ -3,11 +3,11 @@
 }
 
 h1 {
-  color:#332e56;
+  color:white;
 }
 
 .splash {
-  background-color:white;
+  background-color:#332e56;
   height:250px;
 }
 
@@ -24,3 +24,15 @@ h1 {
   border-radius: .25rem;
   padding: .375rem .75rem;
 }
+.btn-outline-primary:hover {
+  margin-left:10px;
+  margin-top:20px;
+  color: #ffffff;
+  background: transparent none;
+  border: 1px solid #ffffff;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  line-height: 1.5;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+}
+
