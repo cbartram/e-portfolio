@@ -13,9 +13,9 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "deploy": "react-scripts build && cp build/index.html build/200.html && surge build --domain erika-pickard.surge.sh",
+    "deploy": "react-scripts build && cp build/index.html build/200.html && cp Resume.pdf build/static/media/Resume.pdf && surge build --domain erika-pickard.surge.sh",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp build/index.html build/200.html && cp Resume.pdf build/static/media/Resume.pdf",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

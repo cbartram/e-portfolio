@@ -18,8 +18,57 @@ AWS.config.update({region:'us-east-1', secretAccessKey: process.env.AWS_ACCESS_K
 //Init DB Connection
 let dynamodb = new AWS.DynamoDB();
 
+const index = require('./routes/index');
+
+let app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({ secret: "treepepperonicupjacketphonedogkingbreadcakelovetourbignoonsuperzoom" }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+//Allow CORS
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
+    next();
+});
+
+//Allow for the Preflight options request before the post request
+app.options("/*", function(req, res){
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
+    res.send(200);
+});
+
+/**
+ * Serializes user to the http Session
+ */
+passport.serializeUser((user, done) => {
+    console.log("Serializing User ->", user);
+    done(null, user);
+});
+
+/**
+ * Deserializes user to the http session
+ */
+passport.deserializeUser((user, done) => {
+    console.log("Deserializing ->", user);
+    done(null, user);
+});
+
 passport.use(new LocalStrategy((username, password, done) => {
-     let query = {
+        let query = {
             Key: {
                 "username": {
                     S: username.toUpperCase()
@@ -47,59 +96,19 @@ passport.use(new LocalStrategy((username, password, done) => {
 ));
 
 /**
- * Serializes user to the http Session
- */
-passport.serializeUser((user, done) => {
-    done(null, user);
-});
-
-/**
- * Deserializes user to the http session
- */
-passport.deserializeUser((user, done) => {
-    done(null, user);
-});
-
-const index = require('./routes/index');
-
-let app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(session({ secret: "treepepperonicupjacketphonedogkingbreadcakelovetourbignoonsuperzoom" }));
-app.use(passport.initialize());
-app.use(passport.session());
-
-//Allow CORS
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE, OPTIONS');
-    next();
-});
-
-//Allow for the Preflight options request before the post request
-app.options("/*", function(req, res){
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-    res.send(200);
-});
-
-/**
  * =================
  * HTTP(S) ROUTES
  * =================
  */
 app.use('/', index);
 app.post('/admin/login', passport.authenticate('local'), (req, res) => {
-        res.json({success: true, user: req.user})
+   res.json({success: true, user: req.user, session: req.session.passport})
+});
+
+
+app.get('/auth', (req, res) => {
+    console.log(req.user);
+    req.user ? res.json({auth: true, user: req.user}) : res.json({auth: false});
 });
 
 app.post('/contact/submit', (req, res) => {

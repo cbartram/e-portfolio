@@ -17,8 +17,8 @@ class Contact extends Component {
                 message: ''
             },
             successMessage: ''
+        };
         }
-    }
 
     /**
      * Handles updating the state with changes to each form field
@@ -60,6 +60,9 @@ class Contact extends Component {
             body: JSON.stringify(this.state.form), //Post the Form data stored in react state
         }).then(res => res.json()).then(body => {
            if(body.success) {
+               //At this point the user is succesfully logged in
+               localStorage.setItem("user", body);
+
                this.setState({
                    form: {
                        title: '',

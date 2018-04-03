@@ -12,7 +12,7 @@ class Footer extends Component {
                     </div>
                     <div>
                         <i className="fa fa-phone" />
-                        <p>(407)-247-0519</p>
+                        <p>(321)-491-7825</p>
                     </div>
                     <div>
                         <i className="fa fa-envelope" style={{ fontSize: '20px'}} />

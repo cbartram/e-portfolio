@@ -15,7 +15,7 @@ class Navigation extends Component {
                         </div>
                         <div className="collapse navbar-collapse" id="navbar-primary-collapse">
                             <ul className="nav navbar-nav">
-                                <a className="navbar-brand" href="#home">
+                                <a className="navbar-brand" href="/">
                                     <p>Erika Pickard</p>
                                 </a>
                                 <li><a href="/">Home</a></li>

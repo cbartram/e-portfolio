@@ -7,6 +7,20 @@ h1 {
 }
 
 .splash {
-  background-color:rgb(243, 225, 212);
+  background-color:white;
   height:250px;
+}
+
+.btn-outline-primary {
+  margin-left:10px;
+  margin-top:20px;
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+  border:1px solid;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  line-height: 1.5;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
 }

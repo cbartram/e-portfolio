@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Auth from '../../../Auth';
+
 
 
 export default class Login extends Component {
@@ -52,7 +54,8 @@ export default class Login extends Component {
                 }
             } else {
                 //Successful Login
-                console.log("Successful Login!");
+                console.log("Successful Login!", body);
+                Auth.check();
                 this.setState({ error: {username: '', password: ''}})
             }
         });
