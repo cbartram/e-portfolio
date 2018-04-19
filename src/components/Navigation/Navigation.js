@@ -15,14 +15,14 @@ class Navigation extends Component {
                         </div>
                         <div className="collapse navbar-collapse" id="navbar-primary-collapse">
                             <ul className="nav navbar-nav">
-                                <a className="navbar-brand" href="#home">
+                                <a className="navbar-brand" href="/">
                                     <p>Erika Pickard</p>
                                 </a>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about">About Me</a></li>
                                 <li><a href="/resume">Resume</a></li>
                                 <li><a href="/practicum">Practicum</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
+                                <li><a href="/experiences">Experiences</a></li>
                                 <li><a href="/contact">Contact Me</a></li>
                             </ul>
                         </div>

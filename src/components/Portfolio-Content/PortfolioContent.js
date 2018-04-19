@@ -6,13 +6,21 @@ class PortfolioContent extends Component {
         return (
             <div>
                 <div className="row">
-                    <div className="col-md-3 col-md-offset-1">
-                        <h2>Topic One</h2>
+                    <div className="col-md-5 col-md-offset-1">
+                        <h2>{this.props.title}</h2>
                     </div>
                 </div>
                 <div className="row margin-bottom">
                     <div className="col-md-3 col-md-offset-1">
-                        <div className="image-topic-one" />
+                        <div style=
+                            {{
+                                backgroundImage: `url("${this.props.src}")`,
+                                backgroundRepeat: 'no-repeat',
+                                backgroundPosition: 'center',
+                                backgroundSize:`cover`,
+                                height:`250px`
+                            }}
+                        />
                     </div>
                     <div className="col-md-6">
                         <p>

@@ -8,11 +8,11 @@ class Footer extends Component {
                 <div className="footer-center">
                     <div>
                         <i className="fa fa-map-marker" />
-                        <p><span>8306 Lincoln Lane</span> McClean, Virginia 22102</p>
+                        <p><span>12337 Wynnfield Lakes Dr #821</span> Jacksonville, FL 32246</p>
                     </div>
                     <div>
                         <i className="fa fa-phone" />
-                        <p>(407)-247-0519</p>
+                        <p>(321)-491-7825</p>
                     </div>
                     <div>
                         <i className="fa fa-envelope" style={{ fontSize: '20px'}} />
@@ -23,7 +23,7 @@ class Footer extends Component {
                     <p className="footer-company-about">
                         <span>Erika Pickard</span>
                         You can find me on Facebook, Twitter, and LinkedIn
-                        at the links below.
+                        at the links below. All Pictures used with Consent
                     </p>
                     <div className="footer-icons">
                         <a href="mailto:pickarderika@gmail.com"><i className="fa fa-envelope" /></a>

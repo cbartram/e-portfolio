@@ -15,24 +15,31 @@ class Practicum extends Component {
                 <Navigation/>
                 <main>
                     <section className="row" id="practicum">
-                        <div className="col-md-2 col-md-offset-5">
-                            <h1 align="center">Practicum</h1>
+                        <div className="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5">
+                            <h1>Practicum</h1>
                         </div>
                     </section>
+                    <div className="row media">
+                        <div className="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                            <div className="embed-responsive embed-responsive-16by9">
+                                <iframe src="https://www.youtube.com/embed/08UfJ8HSpfY?ecver=1"  allowfullscreen/>
+                            </div>
+                        </div>
+                    </div>
                     <div className="row practicum-text">
                         <div className="col-md-10 col-md-offset-1">
-                            <p>
+                            <p className="text-muted">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue leo et gravida auctor. Curabitur sed rhoncus mauris, ac luctus turpis. Nunc tincidunt dolor vel porta imperdiet. Praesent tristique aliquet tortor, sollicitudin lacinia ipsum lacinia id.
                                 Cras sit amet tortor id massa efficitur suscipit. <br/> Vestibulum quis nisl sagittis, pharetra sapien sed, vestibulum nisi.
                                 Maecenas scelerisque molestie eleifend. Donec suscipit placerat ultricies. Ut quis arcu nec justo egestas tristique.
                                 Nam efficitur consequat nisi sed rutrum.
-                                <img src={imageOne} height="175" width="175" alt="Trees" align="left" />
+                                <img src={imageOne} className="img-thumbnail" height="275" width="275" alt="Trees" align="left" />
                                 Sed sodales auctor sollicitudin. Nullam hendrerit neque tortor, ac placerat metus sollicitudin in. Suspendisse in augue feugiat, dictum ante a, dignissim magna. Integer ultrices tortor in ligula lobortis lobortis. Cras quis sapien lorem. Donec cursus, libero quis laoreet hendrerit, velit turpis congue nisl, non cursus ante
                                 dui vel leo. Mauris imperdiet sollicitudin urna condimentum tincidunt. <br/> Duis metus ipsum, congue nec est in, dignissim pulvinar eros.
                                 Vestibulum vestibulum sit amet felis vel fermentum. Donec ultricies egestas enim ut porttitor. Nulla auctor dolor id augue bibendum,
                                 eu placerat dolor rhoncus. Nunc eget felis at lectus lobortis laoreet. Fusce fringilla efficitur egestas. Aliquam blandit consectetur
                                 tortor, eu lobortis lacus aliquam ut.
-                                <img src={imageTwo} height="175" width="175" alt="Trees" align="right" />
+                                <img src={imageTwo} className="img-thumbnail" height="275" width="275" alt="Trees" align="right" />
                                 Phasellus at felis nisl. Vestibulum ante ipsum primis in faucibus orci <br/>
                                 luctus et ultrices posuere cubilia Curae; Vestibulum rhoncus purus in sapien blandit convallis. Nunc auctor faucibus lacus nec venenatis. Aliquam erat volutpat. In ullamcorper, dolor et consequat cursus,
                                 ante tellus dapibus enim, eget tempus dolor sem sed metus. Integer volutpat ante id diam ornare pharetra. Nunc vitae ante ac
