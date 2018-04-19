@@ -75,7 +75,7 @@ class Resume extends Component {
                         <div className="row">
                             <div className="col-md-2 col-md-offset-5 col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-5">
                                 <a href="https://s3.amazonaws.com/aeroscape-cache/Resume.pdf">
-                                    <button type="button" className="btn btn-outline-primary">Download PDF</button>
+                                    <button type="button" className="btn btn-outline-primary btn-red">Download PDF</button>
                                 </a>
                             </div>
                         </div>

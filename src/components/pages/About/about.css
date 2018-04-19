@@ -12,7 +12,7 @@
 .image-self {
     margin-top:20px;
     margin-bottom:20px;
-    background: url("../../../images/redwood-day.jpg") no-repeat center;
+    background: url("../../../images/doll.jpeg") no-repeat center;
     background-size:cover;
     height:300px;
 }
@@ -20,7 +20,8 @@
 .image-self-2 {
     margin-top:20px;
     margin-bottom:20px;
-    background: url("../../../images/redwoods.jpg") no-repeat center;
+    image-orientation: from-image;
+    background: url("../../../images/doll_with_erika.jpeg") no-repeat center;
     background-size:cover;
     height:300px;
 }

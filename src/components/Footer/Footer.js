@@ -23,7 +23,7 @@ class Footer extends Component {
                     <p className="footer-company-about">
                         <span>Erika Pickard</span>
                         You can find me on Facebook, Twitter, and LinkedIn
-                        at the links below.
+                        at the links below. All Pictures used with Consent
                     </p>
                     <div className="footer-icons">
                         <a href="mailto:pickarderika@gmail.com"><i className="fa fa-envelope" /></a>

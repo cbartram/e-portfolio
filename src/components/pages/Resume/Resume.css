@@ -36,3 +36,8 @@ h1 {
   padding: .375rem .75rem;
 }
 
+
+.btn-red {
+  border-color:#fc7b65;
+  color: #fc7b65;
+}

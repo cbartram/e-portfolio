@@ -50,16 +50,15 @@ class Contact extends Component {
         }
 
         //Submit the form
-        //TODO CHANGE TO THE DEST URL
         !err &&
-        fetch('http://localhost:3001/contact/submit/', {
+        fetch('https://imanpf4azc.execute-api.us-east-1.amazonaws.com/Dev/contact', {
             method: 'POST',
             headers: {
                 Accept: 'application/json', 'Content-Type': 'application/json',
             },
             body: JSON.stringify(this.state.form), //Post the Form data stored in react state
         }).then(res => res.json()).then(body => {
-           if(body.success) {
+          // if(body.success) {
                //At this point the user is succesfully logged in
                localStorage.setItem("user", body);
 
@@ -71,7 +70,18 @@ class Contact extends Component {
                    },
                    successMessage: 'Your information has been sent successfully!'
                })
-           }
+           //}
+        }).catch(err => {
+           console.log("Error Occurred -> Check DynamoDB for Insertion State");
+           this.setState({
+                form: {
+                    title: '',
+                    email: '',
+                    message: ''
+                },
+                successMessage: 'Your information has been sent successfully!'
+            })
+
         });
 
     };
