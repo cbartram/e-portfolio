@@ -18,7 +18,7 @@ class App extends Component {
                     <div className="section-header-dot" />
                     <div className="col-md-12">
                         <div className="row">
-                            <Content title="About Me" size={7} offset={3}>
+                            <Content title="Welcome" size={7} offset={3}>
                                 <p align="center" className="main-paragraph">
                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus ante sed odio feugiat, vel dictum elit pharetra.
                                    Phasellus eu lorem sit amet ligula congue sodales. Nulla rhoncus in lectus vitae tempor. Aenean sed egestas mi. Duis urna est,

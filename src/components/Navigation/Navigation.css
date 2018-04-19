@@ -52,3 +52,8 @@ li > a {
     border-bottom:3px solid rgb(50, 47, 83);
     color:rgb(50, 47, 83);
 }
+
+#sub {
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

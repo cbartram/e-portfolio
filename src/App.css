@@ -153,6 +153,7 @@ p {
 .Quotes {
     display:block;
     background-color:white;
+    border-top:1px solid #eeeeee;
 }
 .Quotes:before {
     display: block;

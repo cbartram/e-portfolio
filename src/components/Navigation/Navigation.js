@@ -17,6 +17,7 @@ class Navigation extends Component {
                             <ul className="nav navbar-nav">
                                 <a className="navbar-brand" href="/">
                                     <p>Erika Pickard</p>
+                                    <p className="subtext" id="sub">Aspiring Child Life Specialist</p>
                                 </a>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about">About Me</a></li>
