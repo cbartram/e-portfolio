@@ -19,9 +19,9 @@ class Portfolio extends Component {
                             <h1 align="center" className="portfolio-header">Experiences</h1>
                         </div>
                     </section>
-                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://s3.amazonaws.com/erika-portfolio/police.jpeg"/>
-                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://s3.amazonaws.com/erika-portfolio/police.jpeg"/>
-                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://s3.amazonaws.com/erika-portfolio/police.jpeg"/>
+                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://images.unsplash.com/photo-1510093119537-f102b0e4460a?ixlib=rb-0.3.5&s=0eee1e9b1fb7dd0e1e44338d8b22f439&auto=format&fit=crop&w=2850&q=80"/>
+                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://images.unsplash.com/photo-1509833214245-2078371af406?ixlib=rb-0.3.5&s=329bb81bdc150be47294638a425e18e9&auto=format&fit=crop&w=2048&q=80"/>
+                    <PortfolioContent title="Fashion Funds the Cure - Jax" src="https://images.unsplash.com/photo-1504280278378-abdab9211774?ixlib=rb-0.3.5&s=7a4736050d345dc1e183508f5f5f3dc9&auto=format&fit=crop&w=2100&q=80"/>
                 </main>
                 <Footer/>
             </div>

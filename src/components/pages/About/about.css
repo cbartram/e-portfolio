@@ -15,15 +15,25 @@
     background: url("../../../images/doll.jpeg") no-repeat center;
     background-size:cover;
     height:300px;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .image-self-2 {
     margin-top:20px;
     margin-bottom:20px;
-    image-orientation: from-image;
-    background: url("../../../images/doll_with_erika.jpeg") no-repeat center;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: url("https://images.unsplash.com/photo-1506469265591-1fba55e325ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf8c37653649d073ce1dc7c86357783e&auto=format&fit=crop&w=975&q=80") no-repeat center;
     background-size:cover;
     height:300px;
+    width:300px;
 }
 
 /**

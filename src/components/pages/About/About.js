@@ -43,7 +43,7 @@ class About extends Component {
                             </Content>
                         </div>
                         <div className="col-md-3">
-                            <div className="image-self-2" />
+                            <div className="img-thumbnail image-self-2" />
                         </div>
                     </section>
                 </main>
